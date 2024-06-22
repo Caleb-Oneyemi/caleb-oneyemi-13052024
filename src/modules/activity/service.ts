@@ -65,11 +65,11 @@ export const handleActivityPostProcessing = async (
           index: activity.token_index,
           contract_address: activity.contract_address,
         }),
-        await countActivities({
+        countActivities({
           token_index: activity.token_index,
           contract_address: activity.contract_address,
         }),
-        await getActivityWithLowestPrice({
+        getActivityWithLowestPrice({
           token_index: activity.token_index,
           contract_address: activity.contract_address,
         }),
